@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#header{
+    background-color: #c0c0c0;
+}
