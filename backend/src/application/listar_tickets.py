@@ -2,10 +2,10 @@ def listar_tickets():
     return[
         {
             "id": 1,
-            "titulo": "MXRF11",
+            "title": "MXRF11",
         },
         {
             "id": 2,
-            "titulo": "KNRI11",
+            "title": "KNRI11",
         }
     ]

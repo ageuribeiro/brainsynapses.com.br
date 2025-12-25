@@ -4,9 +4,12 @@
 
   const tickets = ref([])
 
-  onMounted(async () =>{
+  onMounted(async () => {
     const response = await fetch(`${API_BASE_URL}/api/tickets`)
-    tickets.value = await response.json()
+    const data = await response.json()
+
+    console.log("Dados do Backend",data)
+    tickets.value = data
   })
 </script>
 
@@ -14,12 +17,15 @@
   <main>
     <h1>Tickets</h1>
     <ul>
-      <li v-for="ticket in tickets" :key="ticket.id">{{ ticket.title }}</li>
+      <li v-for="ticket in tickets" :key="ticket.id">{{ ticket.id }} - {{ ticket.title }}</li>
     </ul>
   </main>
 </template>
 
 <style scoped>
+  ul, li{
+    text-decoration: none;
+  }
 .logo {
   height: 6em;
   padding: 1.5em;
