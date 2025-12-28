@@ -17,7 +17,7 @@
   <main>
     <h1>Tickets</h1>
     <ul>
-      <li v-for="ticket in tickets" :key="ticket.id">{{ ticket.id }} - {{ ticket.title }}</li>
+      <li v-for="ticket in tickets" :key="ticket.id">{{ ticket.id }} - {{ ticket.title }} - {{ ticket.description }}</li>
     </ul>
   </main>
 </template>

@@ -3,7 +3,7 @@ class Category:
         self.id = id
         self.title = title
         self.description = description
-        
+
     def tickets():
         return[
             {
@@ -14,6 +14,7 @@ class Category:
             {
                 "id": 2,
                 "title": "KNRI11",
+                "description": "Fundo de Investimento Imobiliário",
                 
             },
             {
