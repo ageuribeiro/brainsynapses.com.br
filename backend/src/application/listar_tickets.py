@@ -15,7 +15,6 @@ class Category:
                 "id": 2,
                 "title": "KNRI11",
                 "description": "Fundo de Investimento Imobiliário",
-                
             },
             {
                 "id": 3,

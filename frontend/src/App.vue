@@ -14,10 +14,12 @@
 </script>
 
 <template>
-  <main>
-    <h1>Tickets</h1>
+  <main class="container">
+    <h2>Tickets</h2>
     <ul>
-      <li v-for="ticket in tickets" :key="ticket.id">{{ ticket.id }} - {{ ticket.title }} - {{ ticket.description }}</li>
+      <li v-for="ticket in tickets" :key="ticket.id">
+        {{ ticket.id }} - {{ ticket.title }} - {{ ticket.description }}
+      </li>
     </ul>
   </main>
 </template>
