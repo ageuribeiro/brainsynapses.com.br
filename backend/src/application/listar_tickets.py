@@ -3,6 +3,7 @@ class Category:
         self.id = id
         self.title = title
         self.description = description
+        
     def tickets():
         return[
             {

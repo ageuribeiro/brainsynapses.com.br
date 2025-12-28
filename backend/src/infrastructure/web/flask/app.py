@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_cors import CORS
 from .api.tickets_api import tickets_api
+from .api.products_api import products_api
 from .html.tickets_page import tickets_page
 
 def create_app():
